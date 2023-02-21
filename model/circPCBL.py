@@ -2,6 +2,8 @@ import re
 import torch
 from torch import nn
 from torch.nn import functional as F
+from torch.utils.data import TensorDataset
+from torch.utils.data import DataLoader
 import pandas as pd
 import numpy as np
 from itertools import product
@@ -10,7 +12,7 @@ from itertools import product
 pattern_title = re.compile(r'^>.*', re.M)
 pattern_n = re.compile(r'\n')
 
-with open(r'C:\Users\12192\Desktop\demo.fasta', 'r', encoding='utf-8') as f:  # upload your fasta file
+with open(r'../example.fasta', 'r', encoding='utf-8') as f:  # upload your fasta file
     text = f.read()
 
 data = re.split(pattern_title, text)
@@ -95,7 +97,7 @@ text_len = 1500
 pad_text = [l + (text_len - len(l)) * [4] if len(l) < text_len else l[:text_len] for l in text]
 pad_text = np.array(pad_text)
 pad_text = np.concatenate([pad_text, data.iloc[:, 1:].values], axis=1)
-X = torch.tensor(pad_text,dtype=torch.float32)
+X = torch.tensor(pad_text, dtype=torch.float32)
 
 # define the network
 one_hot_dim = len(word_list)
@@ -194,15 +196,21 @@ class Net(nn.Module):
 
 model = Net(word_list, one_hot_dim, hidden_size)
 model.load_state_dict(torch.load('../model.pkl'))
-loss = nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+# loss = nn.CrossEntropyLoss()
+# optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+
+# Dataset and DataLoader
+ds_X = TensorDataset(X)
+dl_X = DataLoader(ds_X, batch_size=256, shuffle=False)
 
 # output results
-y_pred = torch.argmax(model(X), dim=1)
+result = torch.tensor([])
+for (x,) in dl_X:
+    y_pred = torch.argmax(model(x), dim=1)
+    result = torch.cat([result, y_pred])
 
 # to Dataframe
-result = pd.DataFrame(y_pred)
-result = pd.concat([pd.DataFrame(range(len(result))), result], axis=1)
+result = pd.concat([pd.DataFrame(range(len(result))), pd.DataFrame(result)], axis=1)
 result.columns = ['Index', 'Predict_result']
 result['Predict_result'] = np.where(result['Predict_result'] == 1, 'circRNA', 'lncRNA')
 
