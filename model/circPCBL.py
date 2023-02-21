@@ -195,7 +195,7 @@ class Net(nn.Module):
         return x
 
 model = Net(word_list, one_hot_dim, hidden_size)
-model.load_state_dict(torch.load('../model.pkl'))
+model.load_state_dict(torch.load('../model.pkl', map_location=torch.device('cpu')))
 # loss = nn.CrossEntropyLoss()
 # optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
