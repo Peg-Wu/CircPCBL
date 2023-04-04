@@ -28,3 +28,4 @@ $ python xxx.py
 4. [`Animal_GPU.py`](./Model/Animal_GPU.py): Used for animal circRNAs identification, running on GPU. 
 * `--input`: File path of the input. (Must be in `fasta` format) 
 * `--output`: Path for storing the result file. (Must be in `csv` format) 
+* `--batch_size`: The default value is 16, it is recommended not to set it too large.
