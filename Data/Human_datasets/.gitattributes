@@ -1,0 +1,5 @@
+1.csv filter=lfs diff=lfs merge=lfs -text
+2.csv filter=lfs diff=lfs merge=lfs -text
+3.csv filter=lfs diff=lfs merge=lfs -text
+4.csv filter=lfs diff=lfs merge=lfs -text
+5.csv filter=lfs diff=lfs merge=lfs -text
