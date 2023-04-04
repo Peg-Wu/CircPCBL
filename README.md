@@ -26,5 +26,5 @@ $ python xxx.py
 2. [`Plant_GPU.py`](./Model/Plant_GPU.py): Used for plant circRNAs identification, running on GPU. 
 3. [`Animal_CPU.py`](./Model/Animal_CPU.py): Used for animal circRNAs identification, running on CPU. 
 4. [`Animal_GPU.py`](./Model/Animal_GPU.py): Used for animal circRNAs identification, running on GPU. 
-* `--input`: File path of the input. (Must be in **`fasta`** format) 
-* `--output`: Path for storing the result file. (Must be in **`csv`** format) 
+* `--input`: File path of the input. (Must be in `fasta` format) 
+* `--output`: Path for storing the result file. (Must be in `csv` format) 
