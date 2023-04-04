@@ -31,4 +31,4 @@ $ python xxx.py
 * `--batch_size`: The default value is 16, it is recommended not to set it too large.
 
 ## Server
-CircPCBL is available for free on the server: [`www.circpcbl.cn`]((https://www.circpcbl.cn)
+CircPCBL is available for free on the server: [`www.circpcbl.cn`](http://circpcbl.cn/#/)
