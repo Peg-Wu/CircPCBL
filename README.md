@@ -29,3 +29,6 @@ $ python xxx.py
 * `--input`: File path of the input. (Must be in `fasta` format) 
 * `--output`: Path for storing the result file. (Must be in `csv` format) 
 * `--batch_size`: The default value is 16, it is recommended not to set it too large.
+
+## Server
+CircPCBL is available for free on the server: [`www.circpcbl.cn`](www.circpcbl.cn)
