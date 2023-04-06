@@ -38,19 +38,12 @@ $ python xxx.py
 
 ## Note!
 * Please review the following tools before utilizing CircPCBL:  
-1. OrfPredictor: [`http://proteomics.ysu.edu/tools/OrfPredictor.html`](http://proteomics.ysu.edu/tools/OrfPredictor.html)[1]  
-2. NCBI ORF Finder: [`https://www.ncbi.nlm.nih.gov/orffinder/`](https://www.ncbi.nlm.nih.gov/orffinder/) [2]  
-3. LGC for long non-coding RNAs: [`https://ngdc.cncb.ac.cn/lgc/`](https://ngdc.cncb.ac.cn/lgc/) [3] 
-4. tRNA-scan: [`http://lowelab.ucsc.edu/tRNAscan-SE/`](http://lowelab.ucsc.edu/tRNAscan-SE/) [4, 5]  
+1. `OrfPredictor`: [`http://proteomics.ysu.edu/tools/OrfPredictor.html`](http://proteomics.ysu.edu/tools/OrfPredictor.html)[1]  
+2. `NCBI ORF Finder`: [`https://www.ncbi.nlm.nih.gov/orffinder/`](https://www.ncbi.nlm.nih.gov/orffinder/) [2]  
+3. `LGC for long non-coding RNAs`: [`https://ngdc.cncb.ac.cn/lgc/`](https://ngdc.cncb.ac.cn/lgc/) [3] 
+4. `tRNA-scan`: [`http://lowelab.ucsc.edu/tRNAscan-SE/`](http://lowelab.ucsc.edu/tRNAscan-SE/) [4, 5]  
 
 * Check the coding capacity of the sequences, please use `1-3` 
 * Confirm whether the sequences are tRNAs or not, please use `4` 
 
-**Once you have verified that your test sequences are lncRNAs but not mRNAs or sncRNAs along with the above tools, our model will be of assistance in further determining whether they are circRNAs.**
-
-## References
-[1] Min, X.J., et al., OrfPredictor: predicting protein-coding regions in EST-derived sequences. Nucleic Acids Research, 2005. 33(suppl_2): p. W677-W680. 
-[2] Sayers, E.W., et al., Database resources of the National Center for Biotechnology Information. Nucleic Acids Research, 2010. 38: p. D5-D16. 
-[3] Wang, G., et al., Characterization and identification of long non-coding RNAs based on feature relationship. Bioinformatics, 2019. 35(17): p. 2949-2956. 
-[4] Lowe, T.M. and P.P. Chan, tRNAscan-SE On-line: integrating search and context for analysis of transfer RNA genes. Nucleic Acids Research, 2016. 44(W1): p. W54-W57.
-[5] Chan, P.P. and T.M. Lowe, tRNAscan-SE: Searching for tRNA Genes in Genomic Sequences, in Gene Prediction: Methods and Protocols, M. Kollmar, Editor. 2019, Springer New York: New York, NY. p. 1-14.   
+**Once you have verified that your test sequences are lncRNAs but not mRNAs or sncRNAs along with the above tools, our model will be of assistance in further determining whether they are circRNAs.**  
