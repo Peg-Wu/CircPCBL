@@ -38,12 +38,12 @@ $ python xxx.py
 
 ## Note!
 * Please review the following tools before utilizing CircPCBL:  
-1. **OrfPredictor**: [`http://proteomics.ysu.edu/tools/OrfPredictor.html`](http://proteomics.ysu.edu/tools/OrfPredictor.html)[1]  
-2. **NCBI ORF Finder**: [`https://www.ncbi.nlm.nih.gov/orffinder/`](https://www.ncbi.nlm.nih.gov/orffinder/) [2]  
-3. **LGC for long non-coding RNAs**: [`https://ngdc.cncb.ac.cn/lgc/`](https://ngdc.cncb.ac.cn/lgc/) [3] 
-4. **tRNA-scan**: [`http://lowelab.ucsc.edu/tRNAscan-SE/`](http://lowelab.ucsc.edu/tRNAscan-SE/) [4, 5]  
+1. OrfPredictor: [`http://proteomics.ysu.edu/tools/OrfPredictor.html`](http://proteomics.ysu.edu/tools/OrfPredictor.html)[1]  
+2. NCBI ORF Finder: [`https://www.ncbi.nlm.nih.gov/orffinder/`](https://www.ncbi.nlm.nih.gov/orffinder/) [2]  
+3. LGC for long non-coding RNAs: [`https://ngdc.cncb.ac.cn/lgc/`](https://ngdc.cncb.ac.cn/lgc/) [3] 
+4. tRNA-scan: [`http://lowelab.ucsc.edu/tRNAscan-SE/`](http://lowelab.ucsc.edu/tRNAscan-SE/) [4, 5]  
 
-* Check the coding capacity of the sequences, please use `1` `2` `3` 
+* Check the coding capacity of the sequences, please use `1-3` 
 * Confirm whether the sequences are tRNAs or not, please use `4` 
 
 **Once you have verified that your test sequences are lncRNAs but not mRNAs or sncRNAs along with the above tools, our model will be of assistance in further determining whether they are circRNAs.**
