@@ -36,7 +36,7 @@ $ python xxx.py
 ## Contact
 * Please feel free to contact me if you have any questions: `peg2_wu@163.com`
 
-## Note!
+## Guide!
 * Please review the following tools before utilizing CircPCBL:  
 1. `OrfPredictor`: [`http://proteomics.ysu.edu/tools/OrfPredictor.html`](http://proteomics.ysu.edu/tools/OrfPredictor.html) 
 2. `NCBI ORF Finder`: [`https://www.ncbi.nlm.nih.gov/orffinder/`](https://www.ncbi.nlm.nih.gov/orffinder/)   
