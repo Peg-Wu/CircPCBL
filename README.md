@@ -1,4 +1,5 @@
 # CircPCBL for Plant Circular RNA Prediction. 
+This repository provides the implementation of our paper: "[CircPCBL: Identificaiton of Plant CircRNAs with a CNN-BiGRU-GLT Model](https://doi.org/10.3390/plants12081652)," Pengpeng Wu, Zhenjun Nie, Zhiqiang Huang, Xiaodan Zhang.
 
 ## Required Packages 
 
