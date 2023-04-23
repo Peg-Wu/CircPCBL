@@ -18,8 +18,7 @@ This repository provides the implementation of our paper: "[CircPCBL: Identifica
 ## Usage 
 ``` 
 $ cd Model/ 
-$ python xxx.py 
---usage xxx.py --input=seq.fasta --output=result.csv --batch_size=16 
+--usage python xxx.py --input=seq.fasta --output=result.csv --batch_size=16 
 ``` 
 
 * `xxx.py`: `Plant_CPU.py`; `Plant_GPU.py`; `Animal_CPU.py`; `Animal_GPU.py` 
