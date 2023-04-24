@@ -48,5 +48,5 @@ $ cd Model/
 
 **Once you have verified that your test sequences are lncRNAs but not mRNAs or sncRNAs along with the above tools, our model will be of assistance in further determining whether they are circRNAs.**  
 
-#### CircPCBL Video Tutorial
+#### $\color{red} {CircPCBL Video Tutorial} $
 * `Chinese version`: [`Click here to view`](https://www.bilibili.com/video/BV1gh411774a/?spm_id_from=333.999.0.0&vd_source=71ef231609c4f6a95ebfadad530deed2)
